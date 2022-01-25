@@ -1,9 +1,5 @@
-let url = new URL(document.location.href);
 let urln = document.location.pathname;
-//LOCAL
-//let regTransform = urln.replace(/\/grafico\//, '');
-//SERVER
-let regTransform = urln.replace(/\/proy\/grafico\//, '');
+let regTransform = urln.replace(/\/grafico\//, '');
 const nombreIndice = regTransform;
 const ctx = document.querySelector('#chart').getContext('2d');
 /*global Image*/
@@ -157,7 +153,7 @@ function totalChart(ctx, extraerdatos){
 }
 async function renderizarCharts() {
     /*global fetch*/
-    const respuesta = await fetch(`/proy/graficos/grafico/` + nombreIndice).then((res) => {
+    const respuesta = await fetch(`/graficos/grafico/` + nombreIndice).then((res) => {
         return res.json();
     }).then((json) => {
         var extraerDatos = json;

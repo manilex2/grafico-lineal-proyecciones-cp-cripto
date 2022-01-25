@@ -1,5 +1,4 @@
 require('dotenv').config();
-const serverless = require('serverless-http');
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
@@ -25,8 +24,6 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(require('./routes'));
 app.use('/graficos/', require('./routes/graficos'));
-/*app.listen(app.get('port'), () => {
+app.listen(app.get('port'), () => {
     console.log('Conectado en puerto', app.get('port'));
-});*/
-
-module.exports.handler = serverless(app);
+});
