@@ -1,8 +1,5 @@
 let url = new URL(document.location.href);
 let urln = document.location.pathname;
-//LOCAL
-//let regTransform = urln.replace(/\/grafico\//, '');
-//SERVER
 let regTransform = urln.replace(/\/proy\/grafico\//, '');
 const nombreIndice = regTransform;
 const ctx = document.querySelector('#chart').getContext('2d');
@@ -40,7 +37,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#66C7FF',
                 backgroundColor: '#66C7FF',
-                radius: 3
+                radius: 3,
                 //Agregar Puntos
             }, {
                 label: 'Forecast',
@@ -51,7 +48,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#FF9900',
                 backgroundColor: '#FF9900',
-                radius: 3
+                radius: 3,
                 //Agregar Puntos
             }, {
                 label: 'Optimista',
@@ -62,7 +59,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#BDD977',
                 backgroundColor: '#BDD977',
-                radius: 3
+                radius: 3,
                 //Agregar Puntos
             }, {
                 label: 'Pesimista',
@@ -73,7 +70,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#FF6666',
                 backgroundColor: '#FF6666',
-                radius: 3
+                radius: 3,
                 //Agregar Puntos
             }]
         },

@@ -1,6 +1,6 @@
 # serverless.yml
 
-service: proy-invrtir-grafico
+service: invrtir-grafico-lineal-cripto-cp
 
 provider:
   name: aws
@@ -12,4 +12,5 @@ functions:
   app:
     handler: index.handler
     events:
-      - http: ANY /
+      - http: GET /
+      - http: 'GET {proxy+}'
