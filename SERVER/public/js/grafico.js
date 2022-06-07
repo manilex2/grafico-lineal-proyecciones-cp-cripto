@@ -34,8 +34,8 @@ function totalChart(ctx, extraerdatos){
                         return item.precio;
                     }
                 }),
-                borderColor: '#66C7FF',
-                backgroundColor: '#66C7FF',
+                borderColor: '#4DA2FD',
+                backgroundColor: '#4DA2FD',
                 radius: 3,
                 //Agregar Puntos
             }, {
@@ -45,8 +45,8 @@ function totalChart(ctx, extraerdatos){
                         return item.forecast;
                     }
                 }),
-                borderColor: '#FF9900',
-                backgroundColor: '#FF9900',
+                borderColor: '#9E68E5',
+                backgroundColor: '#9E68E5',
                 radius: 3,
                 //Agregar Puntos
             }, {
@@ -56,8 +56,8 @@ function totalChart(ctx, extraerdatos){
                         return item.optimista;
                     }
                 }),
-                borderColor: '#BDD977',
-                backgroundColor: '#BDD977',
+                borderColor: '#7AC95D',
+                backgroundColor: '#7AC95D',
                 radius: 3,
                 //Agregar Puntos
             }, {
@@ -67,8 +67,8 @@ function totalChart(ctx, extraerdatos){
                         return item.pesimista;
                     }
                 }),
-                borderColor: '#FF6666',
-                backgroundColor: '#FF6666',
+                borderColor: '#DF8122',
+                backgroundColor: '#DF8122',
                 radius: 3,
                 //Agregar Puntos
             }]
