@@ -37,7 +37,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#4DA2FD',
                 backgroundColor: '#4DA2FD',
-                radius: 3,
+                radius: 2,
                 //Agregar Puntos
             }, {
                 label: 'Forecast',
@@ -48,7 +48,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#9E68E5',
                 backgroundColor: '#9E68E5',
-                radius: 3,
+                radius: 0,
                 //Agregar Puntos
             }, {
                 label: 'Optimista',
@@ -59,7 +59,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#7AC95D',
                 backgroundColor: '#7AC95D',
-                radius: 3,
+                radius: 0,
                 //Agregar Puntos
             }, {
                 label: 'Pesimista',
@@ -70,7 +70,7 @@ function totalChart(ctx, extraerdatos){
                 }),
                 borderColor: '#DF8122',
                 backgroundColor: '#DF8122',
-                radius: 3,
+                radius: 0,
                 //Agregar Puntos
             }]
         },
@@ -108,7 +108,7 @@ function totalChart(ctx, extraerdatos){
             },
             elements: {
                 line: {
-                    borderWidth: 3,
+                    borderWidth: 1,
                     fill: false,
                 },
                 point: {
