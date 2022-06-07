@@ -13,7 +13,7 @@ provider:
       DB_PASSWORD: Clave de Base de Datos
       DB_PORT: Puerto de Base de Datos
       DB_DATABASE: Base de Datos de Cripto
-      TABLE_CRIPTO: Tabla de Proyecciones a Largo Plazo
+      TABLE_CRIPTO: Tabla de Proyecciones Corto Plazo
 
 functions:
   app:
