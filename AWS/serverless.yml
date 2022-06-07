@@ -1,6 +1,7 @@
 # serverless.yml
 
 service: invrtir-grafico-lineal-cripto-cp
+useDotenv: true
 
 provider:
   name: aws
