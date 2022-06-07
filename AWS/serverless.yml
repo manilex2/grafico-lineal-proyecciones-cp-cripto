@@ -19,6 +19,7 @@ provider:
 functions:
   app:
     handler: index.handler
+    description: LCG2 - Obtiene el gráfico de Proyecciones a corto plazo de Criptos desde los datos de AWS RDS.
     events:
       - http: GET /
       - http: 'GET {proxy+}'
