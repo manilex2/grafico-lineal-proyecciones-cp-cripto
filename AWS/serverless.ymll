@@ -1,0 +1,24 @@
+# serverless.yml
+
+service: invrtir-grafico-lineal-cripto-cp
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: proy
+  region: us-east-2
+  enviroment:
+    DB_HOST: ${env:DB_HOST}
+    DB_USER: ${env:DB_USER}
+    DB_PASSWORD: ${env:DB_PASSWORD}
+    DB_PORT: ${env:DB_PORT}
+    DB_DATABASE: ${env:DB_DATABASE}
+    TABLE_CRIPTO: ${env:TABLE_CRIPTO}
+
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: GET /
+      - http: 'GET {proxy+}'
