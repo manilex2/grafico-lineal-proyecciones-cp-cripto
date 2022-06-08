@@ -5,10 +5,10 @@ useDotenv: true
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
   stage: proy
   region: us-east-2
-  enviroment:
+  environment:
     DB_HOST: ${env:DB_HOST}
     DB_USER: ${env:DB_USER}
     DB_PASSWORD: ${env:DB_PASSWORD}
